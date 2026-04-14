@@ -51,5 +51,6 @@ clearGridBtn.addEventListener("click", () => {
 
     squares.forEach(element => {
         element.style.backgroundColor = "initial";
+        element.style.opacity = "0.1";
     })
 });
