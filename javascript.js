@@ -21,13 +21,17 @@ function createNewGrid(){
     })
 }
 
+function generateRandomRGBValue(){
+    return Math.random() * 255;
+}
+
 function createGridSquares(num){
     for (let i = 0; i < num; i++){
         for (let j = 0; j < num; j++){
             const square = document.createElement("div");
             square.classList.add("gridSquare");
             square.addEventListener('mouseenter', function(){
-                square.style.backgroundColor = "blue";
+                square.style.backgroundColor = `rgb(${generateRandomRGBValue()} ${generateRandomRGBValue()} ${generateRandomRGBValue()})`;
             })
             gridContainer.appendChild(square);
         }
