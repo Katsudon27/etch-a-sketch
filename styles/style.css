@@ -2,6 +2,7 @@
     width: 40px;
     height: 40px;
     border: 1px solid black;
+    opacity: 0.1;
 }
 
 #gridContainer {

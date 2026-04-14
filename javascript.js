@@ -32,6 +32,7 @@ function createGridSquares(num){
             square.classList.add("gridSquare");
             square.addEventListener('mouseenter', function(){
                 square.style.backgroundColor = `rgb(${generateRandomRGBValue()} ${generateRandomRGBValue()} ${generateRandomRGBValue()})`;
+                square.style.opacity = Number(square.style.opacity) + 0.1;
             })
             gridContainer.appendChild(square);
         }
